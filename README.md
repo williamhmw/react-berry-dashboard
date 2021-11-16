@@ -23,6 +23,27 @@
 
 <br />
 
+## Quick Start in [Docker](https://www.docker.com/)
+
+> Get the code
+
+```bash
+$ git clone https://github.com/app-generator/react-berry-dashboard.git
+$ cd react-berry-dashboard
+```
+
+> Start the app in Docker
+
+```bash
+$ docker-compose pull  # download dependencies 
+$ docker-compose build # local set up
+$ docker-compose up    # start the app 
+```
+
+The React UI starts on port `3000` and expects an API server on port `5000` (saved in configuration).
+
+<br />
+
 ![React Nodejs Berry - Open-source full-stack seed project crafted by CodedThemes and AppSeed.](https://user-images.githubusercontent.com/51070104/137620059-07547eb2-0e7c-45e3-b825-67f5c72e4d3e.gif)
 
 <br >
