@@ -1,5 +1,5 @@
 // assets
-import { IconBrandFramer, IconTypography, IconPalette, IconShadow, IconWindmill, IconLayoutGridAdd } from '@tabler/icons';
+import { IconBrandFramer, IconTypography, IconPalette, IconShadow, IconWindmill, IconLayoutGridAdd, IconLayoutCards, IconListDetails } from '@tabler/icons';
 
 // constant
 const icons = {
@@ -8,7 +8,9 @@ const icons = {
     IconShadow: IconShadow,
     IconWindmill: IconWindmill,
     IconBrandFramer: IconBrandFramer,
-    IconLayoutGridAdd: IconLayoutGridAdd
+    IconLayoutGridAdd: IconLayoutGridAdd,
+    IconLayoutCards: IconLayoutCards,
+    IconListDetails: IconListDetails
 };
 
 //-----------------------|| UTILITIES MENU ITEMS ||-----------------------//
@@ -40,6 +42,22 @@ export const utilities = {
             type: 'item',
             url: '/utils/util-shadow',
             icon: icons['IconShadow'],
+            breadcrumbs: false
+        },
+        {
+            id: 'util-kanban',
+            title: 'Kanban',
+            type: 'item',
+            url: '/utils/kanban',
+            icon: icons['IconLayoutCards'],
+            breadcrumbs: false
+        },
+        {
+            id: 'util-projetos',
+            title: 'Projetos',
+            type: 'item',
+            url: '/utils/projetos',
+            icon: icons['IconListDetails'],
             breadcrumbs: false
         },
         {

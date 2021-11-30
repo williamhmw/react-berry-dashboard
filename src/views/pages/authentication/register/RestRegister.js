@@ -116,9 +116,9 @@ const RestRegister = ({ ...others }) => {
                     submit: null
                 }}
                 validationSchema={Yup.object().shape({
-                    email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-                    username: Yup.string().required('Username is required'),
-                    password: Yup.string().max(255).required('Password is required')
+                    email: Yup.string().email('Coloque um e-mail válido').max(255).required('O e-mail é obrigatório'),
+                    username: Yup.string().required('O nome de usuário é obrigatório'),
+                    password: Yup.string().max(255).required('A senha é obrigatória')
                 })}
                 onSubmit={(values, { setErrors, setStatus, setSubmitting }) => {
                     try {
@@ -158,7 +158,7 @@ const RestRegister = ({ ...others }) => {
                             <Grid item xs={12}>
                                 <TextField
                                     fullWidth
-                                    label="Username"
+                                    label="Nome de usuário"
                                     margin="normal"
                                     name="username"
                                     id="username"
@@ -177,7 +177,7 @@ const RestRegister = ({ ...others }) => {
                             </Grid>
                         </Grid>
                         <FormControl fullWidth error={Boolean(touched.email && errors.email)} className={classes.loginInput}>
-                            <InputLabel htmlFor="outlined-adornment-email-register">Email</InputLabel>
+                            <InputLabel htmlFor="outlined-adornment-email-register">E-mail</InputLabel>
                             <OutlinedInput
                                 id="outlined-adornment-email-register"
                                 type="email"
@@ -200,13 +200,13 @@ const RestRegister = ({ ...others }) => {
                         </FormControl>
 
                         <FormControl fullWidth error={Boolean(touched.password && errors.password)} className={classes.loginInput}>
-                            <InputLabel htmlFor="outlined-adornment-password-register">Password</InputLabel>
+                            <InputLabel htmlFor="outlined-adornment-password-register">Senha</InputLabel>
                             <OutlinedInput
                                 id="outlined-adornment-password-register"
                                 type={showPassword ? 'text' : 'password'}
                                 value={values.password}
                                 name="password"
-                                label="Password"
+                                label="Senha"
                                 onBlur={handleBlur}
                                 onChange={(e) => {
                                     handleChange(e);
@@ -278,9 +278,9 @@ const RestRegister = ({ ...others }) => {
                                     }
                                     label={
                                         <Typography variant="subtitle1">
-                                            Agree with &nbsp;
+                                            Aceite os &nbsp;
                                             <Typography variant="subtitle1" component={Link} to="#">
-                                                Terms & Condition.
+                                                Termos & Condições.
                                             </Typography>
                                         </Typography>
                                     }
@@ -312,7 +312,7 @@ const RestRegister = ({ ...others }) => {
                                     variant="contained"
                                     color="secondary"
                                 >
-                                    Sign UP
+                                    Registrar
                                 </Button>
                             </AnimateButton>
                         </Box>

@@ -185,13 +185,13 @@ const NotificationSection = () => {
                                                     <Grid container alignItems="center" justifyContent="space-between">
                                                         <Grid item>
                                                             <Stack direction="row" spacing={2}>
-                                                                <Typography variant="subtitle1">All Notification</Typography>
+                                                                <Typography variant="subtitle1">Todas notificações</Typography>
                                                                 <Chip size="small" label="01" className={classes.notificationChip} />
                                                             </Stack>
                                                         </Grid>
                                                         <Grid item>
                                                             <Typography component={Link} to="#" variant="subtitle2" color="primary">
-                                                                Mark as all read
+                                                                Marcar tudo como lido
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>

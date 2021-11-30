@@ -13,6 +13,8 @@ const DashboardDefault = Loadable(lazy(() => import('../views/dashboard/Default'
 const UtilsTypography = Loadable(lazy(() => import('../views/utilities/Typography')));
 const UtilsColor = Loadable(lazy(() => import('../views/utilities/Color')));
 const UtilsShadow = Loadable(lazy(() => import('../views/utilities/Shadow')));
+const UtilsKanban = Loadable(lazy(() => import('../views/utilities/Kanban')));
+const UtilsProjetos = Loadable(lazy(() => import('../views/utilities/Projetos')));
 const UtilsMaterialIcons = Loadable(lazy(() => import('../views/utilities/MaterialIcons')));
 const UtilsTablerIcons = Loadable(lazy(() => import('../views/utilities/TablerIcons')));
 
@@ -32,6 +34,8 @@ const MainRoutes = () => {
                 '/utils/util-typography',
                 '/utils/util-color',
                 '/utils/util-shadow',
+                '/utils/kanban',
+                '/utils/projetos',
                 '/icons/tabler-icons',
                 '/icons/material-icons',
 
@@ -46,6 +50,8 @@ const MainRoutes = () => {
                         <Route path="/utils/util-typography" component={UtilsTypography} />
                         <Route path="/utils/util-color" component={UtilsColor} />
                         <Route path="/utils/util-shadow" component={UtilsShadow} />
+                        <Route path="/utils/kanban" component={UtilsKanban} />
+                        <Route path="/utils/projetos" component={UtilsProjetos} />
                         <Route path="/icons/tabler-icons" component={UtilsTablerIcons} />
                         <Route path="/icons/material-icons" component={UtilsMaterialIcons} />
 

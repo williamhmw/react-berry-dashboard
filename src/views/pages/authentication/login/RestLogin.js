@@ -101,8 +101,8 @@ const RestLogin = (props, { ...others }) => {
                     submit: null
                 }}
                 validationSchema={Yup.object().shape({
-                    email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-                    password: Yup.string().max(255).required('Password is required')
+                    email: Yup.string().email('Deve ser um e-mail válido').max(255).required('O e-mail é obrigatório'),
+                    password: Yup.string().max(255).required('A senha é obrigatória')
                 })}
                 onSubmit={(values, { setErrors, setStatus, setSubmitting }) => {
                     try {
@@ -154,7 +154,7 @@ const RestLogin = (props, { ...others }) => {
                                 name="email"
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                label="Email Address"
+                                label="E-mail"
                                 inputProps={{
                                     classes: {
                                         notchedOutline: classes.notchedOutline
@@ -170,7 +170,7 @@ const RestLogin = (props, { ...others }) => {
                         </FormControl>
 
                         <FormControl fullWidth error={Boolean(touched.password && errors.password)} className={classes.loginInput}>
-                            <InputLabel htmlFor="outlined-adornment-password-login">Password</InputLabel>
+                            <InputLabel htmlFor="outlined-adornment-password-login">Senha</InputLabel>
                             <OutlinedInput
                                 id="outlined-adornment-password-login"
                                 type={showPassword ? 'text' : 'password'}
@@ -190,7 +190,7 @@ const RestLogin = (props, { ...others }) => {
                                         </IconButton>
                                     </InputAdornment>
                                 }
-                                label="Password"
+                                label="Senha"
                                 inputProps={{
                                     classes: {
                                         notchedOutline: classes.notchedOutline
@@ -214,7 +214,7 @@ const RestLogin = (props, { ...others }) => {
                                         color="primary"
                                     />
                                 }
-                                label="Remember me"
+                                label="Lembre-me"
                             />
                             <Typography
                                 variant="subtitle1"
@@ -223,7 +223,7 @@ const RestLogin = (props, { ...others }) => {
                                 color="secondary"
                                 sx={{ textDecoration: 'none' }}
                             >
-                                Forgot Password?
+                                Esqueceu a senha?
                             </Typography>
                         </Stack>
                         {errors.submit && (
@@ -251,7 +251,7 @@ const RestLogin = (props, { ...others }) => {
                                     variant="contained"
                                     color="secondary"
                                 >
-                                    Sign IN
+                                    Entrar
                                 </Button>
                             </AnimateButton>
                         </Box>
