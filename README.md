@@ -1,6 +1,6 @@
 # [React Berry Dashboard](https://appseed.us/product/react-node-js-berry-dashboard) 
 
-**Berry** is a creative **[React Dashboard](https://appseed.us/product/react-node-js-berry-dashboard)** build using the Material-UI. It is meant to be the best User Experience with highly customizable feature-riched pages. It is a complete game-changer **React Dashboard** with an easy and intuitive responsive design as on retina screens or laptops. The product comes with a simple JWT authentication flow: `login`/`register`/`logout` powered by an open-source **Node JS API** Backend via `Passport` Library.
+**Berry** is a creative **[React Dashboard](https://appseed.us/product/react-node-js-berry-dashboard)** built using the Material-UI. It is meant to be the best User Experience with highly customizable feature-riched pages. It is a complete game-changer **React Dashboard** with an easy and intuitive responsive design as on retina screens or laptops. The product comes with a simple JWT authentication flow: `login`/`register`/`logout` powered by an open-source **Node JS API** Backend via `Passport` Library.
 
 > Features
 
@@ -48,7 +48,7 @@ The React UI starts on port `3000` and expects an API server on port `5000` (sav
 
 <br >
 
-> **Note**: This product can be used with other API Servers for a complete fullstack experience. **ALL API servers use an unified interface**
+> **Note**: This product can be used with other API Servers for a complete full-stack experience. **ALL API servers use a unified interface**
 
 - [Django API Server](https://github.com/app-generator/api-server-django) - open-source product
 - [Flask API Server](https://github.com/app-generator/api-server-flask) - open-source product
